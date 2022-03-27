@@ -20,8 +20,7 @@ func init() {
 	runs := 10000
 	start := time.Now()
 	for i := 0; i < runs; i++ {
-		tmp := time.Now()
-		_ = tmp
+		time.Now()
 	}
 	timeNowCost = time.Now().Sub(start) / time.Duration(runs+1)
 
